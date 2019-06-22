@@ -43,12 +43,21 @@
       </li>
     </ul>
 
-    <form class="" action="#" method="post">
-      <input type="text" id="name" value="hlaing"><br>
-      <input type="password"><br>
-      <input type="range" min="1" max="10" value="7">
-      <input type="checkbox" name="cb"checked> <label for="cb">Check me</label><br>
-      <textarea name="name" rows="10" cols="30"></textarea><br>
+    <form id="form" class="" action="#" method="post">
+      <input type="text" id="name" placeholder="enter your name">
+      <span id="name-feedback"></span><br>
+
+      <input type="password" id="password" placeholder="enter a password">
+      <span id="password-feedback"></span><br>
+
+      <input type="range" id="amount" min="1" max="10" value="7"><br>
+
+      <textarea id="message" name="textarea" rows="10" cols="30"></textarea>
+      <span id="message-feedback"></span><br><br>
+
+      <input type="checkbox" id="checkbox" name="cb" checked> <label for="cb">Check me</label><br>
+      <span id="checkbox-feedback"></span><br>
+
       <input type="submit" name="name" value="Submit">
     </form>
   </div>
